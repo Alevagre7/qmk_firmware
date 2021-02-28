@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      GRV ,EXLM, AT ,HASH, DLR,PERC,               CIRC,LPLT,ASTR,RPGT,NEQL,EQL ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-      F1 , F2 , F3 , F4 , F5 , F6 ,               AMPR,LBRC, UP ,RBRC,GRV ,BSLS,
+     LCF1, F2 , F3 , F4 , F5 , F6 ,               AMPR,LBRC, UP ,RBRC,GRV ,BSLS,
   //|----+----+----+----+----+----+              |----+----+----+----+----+----|
      LSF7, F8 , F9 , F10, F11, F12,               DOT ,LEFT,DOWN,RGHT,SLSH,MINS,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
