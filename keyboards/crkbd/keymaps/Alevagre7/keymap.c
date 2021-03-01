@@ -8,13 +8,6 @@
 #include QMK_KEYBOARD_H
 #include "alevagre7.h"
 
-enum layers {
-    _QWERTY,
-    _LOWER,
-    _RAISE,
-    _ADJUST,
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
@@ -22,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      ESCC, A  , S  , D  , F  , G  ,                H  , J  , K  , L  ,SCLN,QUOT,
   //|----+----+----+----+----+----+              |----+----+----+----+----+----|
-     LSFT, Z  , X  , C  , V  , B  ,                N  , M  ,COMM, DOT,SLSH,MINS,
+     LSCL, Z  , X  , C  , V  , B  ,                N  , M  ,COMM, DOT,SLSH,MINS,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
                        LGUI,LSFT,SPLO,         BSRA,RSFT,FN
   //                  `----+----+----'        `+---+----+----'c
@@ -42,11 +35,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-         ,    ,    ,    ,    ,    ,               MUTE,    ,    ,    ,    ,    ,
+         ,    ,    ,    ,    ,    ,                   ,    ,    ,    ,    ,MUTE,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     LTOG,LHUI,LSAI,LVAI,LRST,BRMU,               VOLU,    ,PGUP,    ,    ,    ,
+     LTOG,LHUI,LSAI,LVAI,LRST,BRMU,                   ,    ,PGUP,    ,    ,VOLU,
   //|----+----+----+----+----+----+              |----+----+----+----+----+----|
-     LMOD,LHUD,LSAD,LVAD,RST ,BRMD,               VOLD,CTRA,PGDN,CTRE,    ,    ,
+     LMOD,LHUD,LSAD,LVAD,RST ,BRMD,                   ,CTRA,PGDN,CTRE,    ,VOLD,
   //`----+----+----+--+-+----+----+----/    \----+----+----+----+----+----+----'
                            ,    ,    ,         ENT,    ,     
   //                  `----+----+----'        `----+----+----'

@@ -1,6 +1,25 @@
 #pragma once
 #include "quantum.h"
 
+// Layers declarations
+enum layers {
+    _QWERTY,
+    _LOWER,
+    _RAISE,
+    _ADJUST,
+};
+
+// Tap Dance declarations
+enum tap_dances {
+    TD_LSFT_CAPS,
+};
+
+// Tap Dance definitions
+qk_tap_dance_action_t tap_dance_actions[] = {
+    // Tap once for Escape, twice for Caps Lock
+    [TD_LSFT_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT, KC_CAPS),
+};
+
 // Mod-Taps
 //  Layers
 #define SPLO LT(_LOWER, KC_SPC)
