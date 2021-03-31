@@ -54,21 +54,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       }
     }
     return false;
-#ifdef RGBLIGHT_ENABLE
-  case RGB_MOD:
-      if (record->event.pressed) {
-        rgblight_step();
-        rgb_mod_changed_keymap();
-      }
-    return false;
-  case RGBRST:
-      if (record->event.pressed) {
-        eeconfig_update_rgblight_default();
-        rgblight_enable();
-        rgb_mod_changed_keymap();
-      }
-    return false;
-#endif
   }
   return process_record_keymap(keycode, record);
 }

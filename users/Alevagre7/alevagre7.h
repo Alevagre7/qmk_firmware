@@ -15,9 +15,6 @@ enum custom_keycodes {
   LPLT,
   RPGT,
   NEQL,
-#ifdef RGB_MATRIX_ENABLE
-  RGBRST,
-#endif
 };
 
 // Tap Dance declarations
@@ -55,7 +52,6 @@ enum tap_dances {
 #define KC_NEQL NEQL // !=
 
 #ifdef RGB_MATRIX_ENABLE
-#define KC_LRST RGBRST
 #define KC_LTOG RGB_TOG // Toggle RGB lighting on or off
 #define KC_LHUI RGB_HUI // Increase hue
 #define KC_LHUD RGB_HUD // Decrease hue
